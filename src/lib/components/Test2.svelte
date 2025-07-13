@@ -9,13 +9,13 @@
     let trials: number[] = [-1, -1, -1];
 
     let status: 'waiting' | 'ready' | 'tooSoon' = 'waiting';
-    let instruction = 'Click when the cylinder turns green';
+    let instruction = 'Click when the circle turns green';
     let startTime = 0;
     let timeoutId: ReturnType<typeof setTimeout>;
 
     function startTrial() {
         status = 'waiting';
-        instruction = 'Click when the cylinder turns green';
+        instruction = 'Click when the circle turns green';
 
         const delay = Math.random() * 4000 + 3000; // 3–7 seconds
         timeoutId = setTimeout(() => {
